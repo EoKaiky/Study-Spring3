@@ -56,6 +56,5 @@ public class DoctorController {
     public ResponseEntity detalhar(@PathVariable Long id){
         var doctor = repository.getReferenceById(id);
         return ResponseEntity.ok(new dataDoctor(doctor));
-
     }
 }
